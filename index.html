@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8">
+	<title>Login Page</title>
+	<script type= "text/javascript">
+			function checkpassword(){
+					var password = document.getElementById("passwordbox");
+					var  passwordText = password.value;
+					if (passwordText == "12three4"){
+						return true;
+
+					}
+					else{
+						alert("Sorry, Access Denied");
+						return false;
+					}
+
+			}
+	</script>
+</head>
+<body>
+
+	<p style= "font-size: 50px ;" > Welcome!</p>
+	<p>Please enter the password to view the following website.</p>
+	<p>Password: <input id= "passwordbox" type = "password"> </p>
+	<a href= "Arshia.HTML" onclick="return checkpassword();">
+	 Click here to sumbit the password and view the site.
+</body>
+</html>
